@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Meet the Team - Dark Mode</title>
+    <!-- MDI Icons -->
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/6.5.95/css/materialdesignicons.min.css">
+    <style>
+       /* Base Styles */
+body {
+    background-color: #ffffff;
+    color: #333333;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    padding: 16px;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.dark-mode {
+    background-color: #1a202c;
+    color: #e2e8f0;
+}
+
+/* Responsive Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Team Members Layout */
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px; /* Increased gap */
+}
+
+/* Individual Member */
+.member {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Avatar Image */
+.avatar img {
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    width: 100%;
+    height: 34vh; /* Maintain aspect ratio */
+    max-width: 250px; /* Optional: control max size */
+}
+
+.avatar img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.member h1 {
+    color: #1a202c;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+.dark-mode .member h1 {
+    color: #ffffff;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.member .title {
+    color: #4a5568;
+    font-weight: 300;
+    margin-bottom: 8px;
+}
+
+.dark-mode .member .title {
+    color: #cbd5e0;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: background-color 0.3s, transform 0.3s;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+/* Specific Icon Colors */
+.social-icons .linkedin {
+    color: #3b5998;
+}
+
+.social-icons .twitter {
+    color: #1da1f2;
+}
+
+.social-icons .instagram {
+    color: #e4405f;
+}
+
+/* Dark Mode Styles for Social Icons */
+.dark-mode .social-icons a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 639px) {
+    .member {
+        width: 100%;
+    }
+
+    .team-members {
+        gap: 16px; /* Smaller gap for mobile devices */
+    }
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+    .member {
+        width: 50%; /* Two items per row on tablets */
+    }
+
+    .team-members {
+        gap: 20px; /* Standard gap for tablets */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .member {
+        width: 33.3333%; /* Three items per row on small desktops */
+    }
+
+    .team-members {
+        gap: 24px; /* Larger gap for small desktops */
+    }
+}
+
+@media (min-width: 1024px) {
+    .member {
+        width: 25%; /* Four items per row on larger desktops */
+    }
+
+    .team-members {
+        gap: 30px; /* Larger gap for larger screens */
+    }
+}
+
+@media (min-width: 1440px) {
+    .member {
+        max-width: 350px; /* Increase max-width for large screens */
+    }
+
+    .team-members {
+        gap: 30px; /* Larger gap for larger screens */
+    }
+}
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Team Members -->
+        <div class="team-members">
+            <!-- Member #1 -->
+            <div class="member">
+                <a href="#" class="avatar">
+                    <img alt="Sumit Rathore" src="./assets/1000051014.jpg">
+                </a>
+                <div class="details">
+                    <h1>Sumit Rathore</h1>
+                    <div class="title">Frontend Developer</div>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/sumit-rathore-48b2a9278?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="linkedin">
+                            <i class="mdi mdi-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/Sumitrathore10" class="twitter">
+                            <i class="mdi mdi-github"></i>
+                        </a>
+                        <a href="https://www.instagram.com/sumitrathore.07?igsh=Mmw1bGpsMnA4bnc2" class="instagram">
+                            <i class="mdi mdi-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Member #2 -->
+            <div class="member">
+                <a href="#" class="avatar">
+                    <img alt="Jai Chawla" src="./assets/IMG-20240424-WA0111.jpg">
+                </a>
+                <div class="details">
+                    <h1>Jai Chawla</h1>
+                    <div class="title">Full Stack Developer</div>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/jai-chawla-70a7b12a5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="linkedin">
+                            <i class="mdi mdi-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/reconj4yz" class="twitter">
+                            <i class="mdi mdi-github"></i>
+                        </a>
+                        <a href="https://www.instagram.com/jchawla_" class="instagram">
+                            <i class="mdi mdi-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Member #3 -->
+            <div class="member">
+                <a href="#" class="avatar">
+                    <img alt="Uday Sharma" src="./assets/IMG_3929.JPG">
+                </a>
+                <div class="details">
+                    <h1>Uday Sharma</h1>
+                    <div class="title">Creative Head</div>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/uday-sharma-5566a82b8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="linkedin">
+                            <i class="mdi mdi-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/udaysharmadev" class="twitter">
+                            <i class="mdi mdi-github"></i>
+                        </a>
+                        <a href="https://www.instagram.com/udaysharmaaaaa?igsh=dTNmNTBoZ2thMzEz&utm_source=qr" class="instagram">
+                            <i class="mdi mdi-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Member #4 -->
+            <div class="member">
+                <a href="#" class="avatar">
+                    <img alt="Tanmay Tiwari" src="./assets/Snapchat-383410048.jpg">
+                </a>
+                <div class="details">
+                    <h1>Tanmay Tiwari</h1>
+                    <div class="title">Full Stack Developer</div>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/tanmay-tiwari20/" class="linkedin">
+                            <i class="mdi mdi-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/tanmay-tiwari-20" class="twitter">
+                            <i class="mdi mdi-github"></i>
+                        </a>
+                        <a href="https://www.instagram.com/tanmay_tiwari_/" class="instagram">
+                            <i class="mdi mdi-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Member #5 -->
+            <div class="member">
+                <a href="#" class="avatar">
+                    <img alt="MD Imran" src="./assets/IMG_20240122_192053_260.jpg">
+                </a>
+                <div class="details">
+                    <h1>MD Imran</h1>
+                    <div class="title">AI/ML Engineer</div>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/md-imran-48a443292?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="linkedin">
+                            <i class="mdi mdi-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/dkpython7" class="twitter">
+                            <i class="mdi mdi-github"></i>
+                        </a>
+                        <a href="https://www.instagram.com/dk.python?igsh=cmI3ZmNtaGpzdWZm" class="instagram">
+                            <i class="mdi mdi-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Member #6 -->
+            <div class="member">
+                <a href="#" class="avatar">
+                    <img alt="Harsh Raj" src="./assets/IMG-20240815-WA0008 (1).jpg">
+                </a>
+                <div class="details">
+                    <h1>Harsh Raj</h1>
+                    <div class="title">Frontend Developer</div>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/harshraj2121" class="linkedin">
+                            <i class="mdi mdi-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/harshraj2121" class="twitter">
+                            <i class="mdi mdi-github"></i>
+                        </a>
+                        <a href="https://www.instagram.com/sir_harsh21?igsh=dGVuZmR4eXo4djU=" class="instagram">
+                            <i class="mdi mdi-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Dark Mode Toggle
+        document.addEventListener('DOMContentLoaded', () => {
+            const toggleDarkMode = () => {
+                document.body.classList.toggle('dark-mode');
+            };
+
+            // Example: Toggle dark mode when the page loads
+            // You can add a button or switch to toggle dark mode in practice
+            toggleDarkMode();
+        });
+    </script>
+</body>
+</html>
